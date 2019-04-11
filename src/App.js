@@ -27,7 +27,7 @@ getCitation() {
     .then(data  => {
       // Une fois les données récupérées, on va mettre à jour notre state avec les nouvelles données
       this.setState({
-        citation:  data.results[0],
+        citation:  data[0],
       });
   });
 }
